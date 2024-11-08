@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cd38c5e11.js" crossorigin="anonymous"></script>
+   
+</head>    
+<body>
+    <div id="header">
+        <div class="container">
+        
+            <nav>
+                <img src="VST_logo.jpg" alt=" V logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>                
+                    <li><a href="#portifolio">portifolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                
+            </nav>
+            <div class="header-text">
+                <p> <b>Aspiring Developer</b>  </p>
+                <h1>Hi ,I'am<span>&nbsp&nbspVSTeja</span><br>from hyderbad</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./aboutme_pic_edit.jpg" alt="AboutPic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><p>I am a 2023 Computer Science graduate with training in Java Full Stack development, skilled in both front-end and back-end technologies, and passionate about building efficient, scalable web applications.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>  
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                            <p class="tab-links"onclick="opentab('exp')">Experience</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>FrontEndSkills</span><br>Html5,Css3,JavaScript & React.Js</</li>
+                                <li><span>JavaSkills</span><br>CoreJava,JDBC,Hibernate,SpringBoot</li>    
+                                <li> <span>DataBase</span><br>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>  2017</span><br>Class X <br>percentage:82%</li>
+                                <li><span>2017-2019</span><br>Class XI,XII <br>percentage:72%</li>    
+                                <li> <span>  2019-2023</span><br>B.E in Computer Science And Engineering <br>percentage:67%</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="exp">
+                            <ul>
+                                <li><span>2023-24</span><br>QSPYDERS <br>Trained  JavaFullStack</li>
+                               
+                            </ul>
+                        </div>
+                </div>
+               
+                <div class="about-col-3"></div>
+            </div>
+        </div>
+    </div>
+    <!------------------------- portifolio --------------->
+    <div id="portifolio">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="work-list">
+            <div>
+                <i class="fa-solid fa-gamepad "></i>
+                <h2>Tic-Tac-Teo</h2>
+                <p>The Tic-Tac-Toe project involves creating a simple two-player game where participants take turns marking X's and O's on a 3x3 grid, aiming to align three marks in a row, column, or diagonal.</p>
+                <a href="https://github.com/VenuSuryaTeja?tab=repositories">Tic-Tac-Teo_GitHub-link</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-id-badge icon" ></i>
+                <h2>Portifolio</h2>
+                <p>The Portfolio project consists of four sections: Home, About, Projects, and Contact, presenting an introduction, personal background, showcase of work, and a means for others to get in touch professionally.</p>
+                <a href="#">Portifolio_GitHub-link</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-java" id="javaIcon"></i>
+                <h2>Java-project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quam nobis ullam? Placeat illum quaerat veritatis. At dignissimos doloremque amet beatae placeat? Eveniet, velit  </p>
+                <a href="#">Java-project_GitHub-link</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Java-project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quam nobis ullam? Placeat illum quaerat veritatis. At dignissimos doloremque amet beatae placeat? Eveniet, velit possimus. </p>
+                <a href="#">Java-project_GitHub-link</a>
+            </div>       
+        </div>    
+    </div>
+    <!-- ----------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">ContactMe</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mvsteja06@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i></i>9133436844</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/suryateja2001/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/master_surya_/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href="./Venu24_Resume(m).pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"  placeholder="Your Name" required >
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+           <center><p>Made by mvsteja <i class="fa-solid fa-laptop-code ic" > </i>Thanks for your time</p></center> 
+        </div>
+    </div> 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzeVACOjg1hxodQjlTjUSI51Z-fx0hRbm5HkLVfPIWkJ0F6gT-8ZqslrvPa42mPVEy/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message sent succesfully"
+             setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })    
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
